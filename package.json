@@ -1,0 +1,21 @@
+{
+  "name": "frontend-2026-lab7",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ЛР №7: React — компоненти Header, Content, Image та галерея товарів GoodsCard (props). Рудь С.С., ІП-44, варіант 122.",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.3.0",
+    "vite": "^8.4.0"
+  }
+}
