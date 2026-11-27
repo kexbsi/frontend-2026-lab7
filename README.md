@@ -33,4 +33,7 @@ npm run preview    # перегляд зібраної версії
 ```
 
 Проєкт створено на [Vite](https://vite.dev/) (сучасна заміна create-react-app).
-Публікація на GitHub Pages — автоматично через GitHub Actions ([deploy.yml](.github/workflows/deploy.yml)).
+Публікація на GitHub Pages — автоматично через GitHub Actions ([deploy.yml](.github/workflows/deploy.yml)):
+workflow встановлює залежності (`npm ci`), збирає проєкт (`npm run build`) і публікує папку `dist`.
+У налаштуваннях репозиторію (Settings → Pages) джерелом має бути **GitHub Actions**, а не гілка:
+браузер не виконує JSX напряму, тому публікувати треба зібрану версію, а не вихідний код.
